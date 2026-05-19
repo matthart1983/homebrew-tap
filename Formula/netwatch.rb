@@ -1,21 +1,21 @@
 class Netwatch < Formula
-  desc "Real-time network diagnostics TUI — like htop for your network"
+  desc "Real-time network diagnostics in your terminal — zero config, instant visibility"
   homepage "https://github.com/matthart1983/netwatch"
-  version "0.16.1"
+  version "0.16.2"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/matthart1983/netwatch/releases/download/v0.16.1/netwatch-macos-aarch64.tar.gz"
-      sha256 "c8a1c5238c17fd1ad6aa17589b13dac44734b6ec4e185e8daed0529a40dc1289"
+      url "https://github.com/matthart1983/netwatch/releases/download/v0.16.2/netwatch-macos-aarch64.tar.gz"
+      sha256 "fb456ac9dbeeb20587d8974c0d7a3b7d108478eeee9817be4c05e8ac12e3cbfe"
 
       def install
         bin.install "netwatch-macos-aarch64" => "netwatch"
       end
     end
     on_intel do
-      url "https://github.com/matthart1983/netwatch/releases/download/v0.16.1/netwatch-macos-x86_64.tar.gz"
-      sha256 "910e705dbffa59744ebd56975ddbe37271567ef583ed1fe2824f859fadf1e9c3"
+      url "https://github.com/matthart1983/netwatch/releases/download/v0.16.2/netwatch-macos-x86_64.tar.gz"
+      sha256 "6f65c76b5cd85461db69f60714449aaf2f7d79ccfa53c88c934279417571ae3c"
 
       def install
         bin.install "netwatch-macos-x86_64" => "netwatch"
@@ -25,16 +25,16 @@ class Netwatch < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/matthart1983/netwatch/releases/download/v0.16.1/netwatch-linux-aarch64-static.tar.gz"
-      sha256 "e6e723a39a1ee57434ad49954255337a5197f095b2c8f0af0b2d197944650b96"
+      url "https://github.com/matthart1983/netwatch/releases/download/v0.16.2/netwatch-linux-aarch64-static.tar.gz"
+      sha256 "7be5dc5191add5d72f30ef386fe2823bab02b58dc9848d222fa28e09153d81c9"
 
       def install
         bin.install "netwatch-linux-aarch64-static" => "netwatch"
       end
     end
     on_intel do
-      url "https://github.com/matthart1983/netwatch/releases/download/v0.16.1/netwatch-linux-x86_64-static.tar.gz"
-      sha256 "ced5f319a7b814e5a1e0e3f09bdca53a69216f4fc80ae2aebc032be0c3a59632"
+      url "https://github.com/matthart1983/netwatch/releases/download/v0.16.2/netwatch-linux-x86_64-static.tar.gz"
+      sha256 "cb258cd802aca77169bfa63ceaf9f8e69dbfa17cd66ead97e881cbbe108a12d2"
 
       def install
         bin.install "netwatch-linux-x86_64-static" => "netwatch"
