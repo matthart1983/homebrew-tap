@@ -1,21 +1,21 @@
 class Syswatch < Formula
   desc "Single-host system diagnostics TUI — sibling to netwatch"
   homepage "https://github.com/matthart1983/syswatch"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/matthart1983/syswatch/releases/download/v0.5.0/syswatch-macos-aarch64.tar.gz"
-      sha256 "2f8974f9de9b5ea13db5e703fa3c5008b4ae81babbb0d71e0b4cbde2158490f9"
+      url "https://github.com/matthart1983/syswatch/releases/download/v0.6.0/syswatch-macos-aarch64.tar.gz"
+      sha256 "1e37ce7d49874da44e32e8a391c61e9b562ac35346f1300cd9e24736428dd911"
 
       def install
         bin.install "syswatch-macos-aarch64" => "syswatch"
       end
     end
     on_intel do
-      url "https://github.com/matthart1983/syswatch/releases/download/v0.5.0/syswatch-macos-x86_64.tar.gz"
-      sha256 "7396f62879cd754ba82a143d37b7c66432e5b7c6eebc13a5c904e0a38a7e36d9"
+      url "https://github.com/matthart1983/syswatch/releases/download/v0.6.0/syswatch-macos-x86_64.tar.gz"
+      sha256 "41107f427cf9a2138ec3b063e01d7f494c46e1dd76456f190358f2d3c21d3cc0"
 
       def install
         bin.install "syswatch-macos-x86_64" => "syswatch"
@@ -25,16 +25,16 @@ class Syswatch < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/matthart1983/syswatch/releases/download/v0.5.0/syswatch-linux-aarch64-static.tar.gz"
-      sha256 "d21e758eb73a305869be91266ed6eed9c9323f70fc565338feef5ca5ad7f4c0a"
+      url "https://github.com/matthart1983/syswatch/releases/download/v0.6.0/syswatch-linux-aarch64-static.tar.gz"
+      sha256 "8e6917dfe04ef39a97232dc7d9b5fa50856e46096ff47953a66e1bb1e81a51c8"
 
       def install
         bin.install "syswatch-linux-aarch64-static" => "syswatch"
       end
     end
     on_intel do
-      url "https://github.com/matthart1983/syswatch/releases/download/v0.5.0/syswatch-linux-x86_64-static.tar.gz"
-      sha256 "0835329dbc909991582354c9022523c49742f5b8f189796db95dddfe43c8c869"
+      url "https://github.com/matthart1983/syswatch/releases/download/v0.6.0/syswatch-linux-x86_64-static.tar.gz"
+      sha256 "cd0acef871edf72f7b2fcd4b377192035276396c44d9393f0cdc7524b7eff7dc"
 
       def install
         bin.install "syswatch-linux-x86_64-static" => "syswatch"
