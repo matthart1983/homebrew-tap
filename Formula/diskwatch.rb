@@ -1,21 +1,21 @@
 class Diskwatch < Formula
   desc "Single-host disk diagnostics TUI — sibling to netwatch and syswatch"
   homepage "https://github.com/matthart1983/diskwatch"
-  version "0.5.0"
+  version "0.5.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/matthart1983/diskwatch/releases/download/v0.5.0/diskwatch-macos-aarch64.tar.gz"
-      sha256 "d563209b3cf4338450f0cfcc5c7eebc28961b008d45c7b3c08e96283d69db7ce"
+      url "https://github.com/matthart1983/diskwatch/releases/download/v0.5.1/diskwatch-macos-aarch64.tar.gz"
+      sha256 "3c714ca9adad3e3fd65ee1a8e80c805ad32d18484c9ceffc206a686d7e4e3463"
 
       def install
         bin.install "diskwatch-macos-aarch64" => "diskwatch"
       end
     end
     on_intel do
-      url "https://github.com/matthart1983/diskwatch/releases/download/v0.5.0/diskwatch-macos-x86_64.tar.gz"
-      sha256 "2c1e4ab6e0c228a5ed8856cec7588544118d8b9ce0a98f945f1ec4f380ac8a19"
+      url "https://github.com/matthart1983/diskwatch/releases/download/v0.5.1/diskwatch-macos-x86_64.tar.gz"
+      sha256 "975b2d293c96a487b94758fe7d4f3b433504d94075a206d046e61c45bc91eb1b"
 
       def install
         bin.install "diskwatch-macos-x86_64" => "diskwatch"
@@ -25,16 +25,16 @@ class Diskwatch < Formula
 
   on_linux do
     on_arm do
-      url "https://github.com/matthart1983/diskwatch/releases/download/v0.5.0/diskwatch-linux-aarch64-static.tar.gz"
-      sha256 "f439b304daf2755fd76e0cd89e6f28e1663d471ae0cade2be7353c245326001d"
+      url "https://github.com/matthart1983/diskwatch/releases/download/v0.5.1/diskwatch-linux-aarch64-static.tar.gz"
+      sha256 "25ca3de377e8c88469afd204632a662985246e32b3f0b263d5350b1875328d63"
 
       def install
         bin.install "diskwatch-linux-aarch64-static" => "diskwatch"
       end
     end
     on_intel do
-      url "https://github.com/matthart1983/diskwatch/releases/download/v0.5.0/diskwatch-linux-x86_64-static.tar.gz"
-      sha256 "597f3a5c6c9f5fa030460b9b6228745fd9e21e35debe8949f5a3c1d78b434463"
+      url "https://github.com/matthart1983/diskwatch/releases/download/v0.5.1/diskwatch-linux-x86_64-static.tar.gz"
+      sha256 "c784b679083e7491d06c33653d6d45231ed92c538e1dc27b6939783a3df0e02f"
 
       def install
         bin.install "diskwatch-linux-x86_64-static" => "diskwatch"
