@@ -4,6 +4,12 @@ class Netwatch < Formula
   version "0.32.0"
   license "MIT"
 
+  # netwatch is in homebrew-core, where Homebrew's autobump ships each
+  # release within hours and builds bottles for macOS and Linux. Install it
+  # with `brew install netwatch`. This tap copy stays only so existing
+  # installs keep working, and is no longer updated by the release workflow.
+  deprecate! date: "2026-09-20", because: "it is now in homebrew-core — install `netwatch` instead"
+
   on_macos do
     on_arm do
       url "https://github.com/matthart1983/netwatch/releases/download/v0.32.0/netwatch-macos-aarch64.tar.gz"
