@@ -7,7 +7,7 @@ class Syswatch < Formula
   on_macos do
     on_arm do
       url "https://github.com/matthart1983/syswatch/releases/download/v0.14.5/syswatch-macos-aarch64.tar.gz"
-      sha256 "6ef514e21eaa03ed084d955a8d23f14a8899706bd0e7761842eee5e0dcfe6f05"
+      sha256 "ca6492698cd56fa8bfd35f3b68a5661de626c2b6972563700791a735cf5e5290"
 
       def install
         bin.install "syswatch-macos-aarch64" => "syswatch"
@@ -15,7 +15,7 @@ class Syswatch < Formula
     end
     on_intel do
       url "https://github.com/matthart1983/syswatch/releases/download/v0.14.5/syswatch-macos-x86_64.tar.gz"
-      sha256 "421a3e5565501bb41bea60fb886aad76cbd480fa1c7cff17cfbc3940828460a4"
+      sha256 "fe033fc6affe7c26fe7efb07a9ebbb417138de6a527dcf5af00779bc5fa95fa2"
 
       def install
         bin.install "syswatch-macos-x86_64" => "syswatch"
@@ -26,7 +26,7 @@ class Syswatch < Formula
   on_linux do
     on_arm do
       url "https://github.com/matthart1983/syswatch/releases/download/v0.14.5/syswatch-linux-aarch64-static.tar.gz"
-      sha256 "3a559aaa3697526703bc8a51998a82128345fd9351739fde0cc9a86b409291bb"
+      sha256 "dbb42cb5f7a81745669df949750aa7cb7bdbd9eba5f9e4729d43355806b74f09"
 
       def install
         bin.install "syswatch-linux-aarch64-static" => "syswatch"
@@ -34,7 +34,7 @@ class Syswatch < Formula
     end
     on_intel do
       url "https://github.com/matthart1983/syswatch/releases/download/v0.14.5/syswatch-linux-x86_64-static.tar.gz"
-      sha256 "795dd126e073771edb4230ec20a0991d83badb6e9910c7c3ef1741b77d3e988c"
+      sha256 "19226bf342dfc05aeddebd275207ab9c73942a57014e9b3ffc124f46bdfcdb3e"
 
       def install
         bin.install "syswatch-linux-x86_64-static" => "syswatch"
